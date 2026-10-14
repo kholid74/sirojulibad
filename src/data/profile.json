@@ -1,0 +1,66 @@
+{
+  "name": "Sirojul Ibad",
+  "role": "UI/UX Designer",
+  "intro": "Hi, I'm Sirojul. My work spans dashboards, websites, and mobile interfaces — with the product at the center.",
+  "about": "I'm Sirojul Ibad, a UI/UX designer with a portfolio spanning dashboards, websites, and mobile experiences.",
+  "email": "ibadsirojul@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/sirojulibad",
+  "behance": "https://www.behance.net/ibadsirojul",
+  "skills": [
+    "UI design",
+    "Wireframing",
+    "Prototyping",
+    "Design systems",
+    "UX design",
+    "Research",
+    "Design thinking",
+    "Usability testing"
+  ],
+  "tools": [
+    "Figma",
+    "Adobe XD",
+    "Photoshop",
+    "Illustrator",
+    "Miro",
+    "Notion",
+    "CorelDRAW"
+  ],
+  "experience": [
+    {
+      "company": "Volantis Technology",
+      "role": "UI/UX Designer",
+      "location": "Yogyakarta",
+      "period": "May 2024 — Jan 2025"
+    },
+    {
+      "company": "QBIT",
+      "role": "UI/UX Designer · Social Media Specialist",
+      "location": "Jakarta",
+      "period": "2023 — 2024"
+    },
+    {
+      "company": "Sekawan Media",
+      "role": "UI/UX Designer · Internship",
+      "location": "Malang",
+      "period": "Dec 2022 — Mar 2023"
+    },
+    {
+      "company": "Kementerian Petanian",
+      "role": "Designer · Freelance",
+      "location": "Jakarta",
+      "period": "Aug 2022 — Sep 2022"
+    },
+    {
+      "company": "Sevensoft Komputindo",
+      "role": "UI Designer · Internship",
+      "location": "Surabaya",
+      "period": "Jun 2021 — Sep 2021"
+    }
+  ],
+  "education": {
+    "subject": "Informatics Engineering",
+    "institution": "Electronic Engineering Polytechnic Institute of Surabaya",
+    "period": "2019 — 2022"
+  },
+  "instagram": "https://www.instagram.com/ibad_06"
+}

@@ -1,0 +1,16 @@
+---
+import { Image } from 'astro:assets';
+import portrait from '../assets/sirojul.jpg';
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import Experience from '../components/Experience.astro';
+import profile from '../data/profile';
+import { publishedProjects } from '../lib/projects';
+const selected = (await publishedProjects()).filter(p => p.data.featuredOrder).sort((a,b) => a.data.featuredOrder! - b.data.featuredOrder!);
+---
+<Layout title="UI/UX Designer — Digital products">
+<section class="hero wrap" aria-labelledby="hero-title"><div class="hero-copy"><span class="eyebrow"><span class="tiny-square"></span> {profile.role}</span><h1 id="hero-title">Designing clarity<br />into digital<br /><em>experiences.</em></h1><p>{profile.intro}</p><div class="hero-actions"><a class="button" href="#portfolio">Explore selected work <span aria-hidden="true">↓</span></a><a class="text-link" href={'mailto:' + profile.email}>Get in touch <span aria-hidden="true">↗</span></a></div></div>
+<figure class="hero-portrait"><div class="portrait-stage"><Image src={portrait} alt="Portrait of Sirojul Ibad" widths={[340, 490]} sizes="(max-width: 700px) 80vw, 396px" format="webp" loading="eager" fetchpriority="high" /></div><figcaption><strong>{profile.name}</strong><span>{profile.role}</span></figcaption></figure></section>
+<section class="selected wrap" id="portfolio" aria-labelledby="work-title"><div class="section-heading"><div><span class="eyebrow">Selected work</span><h2 id="work-title">Different products.<br />The same attention to detail.</h2></div><p>A closer look at dashboards,<br />mobile experiences, and the web.</p></div><div class="project-grid">{selected.map((project,i) => <ProjectCard project={project} featured={i===0} />)}</div><a class="text-link all-work" href="/work/">View all work <span aria-hidden="true">↗</span></a></section>
+<section class="about-section wrap" id="about"><div class="section-intro"><span class="eyebrow">A little about me</span><h2>Across screens.<br />Across contexts.</h2><p>{profile.about}</p><div class="skill-tags">{profile.skills.slice(0,4).map(skill => <span>{skill}</span>)}</div><a class="text-link" href="/about/">More about me <span aria-hidden="true">↗</span></a></div><Experience /></section>
+</Layout>

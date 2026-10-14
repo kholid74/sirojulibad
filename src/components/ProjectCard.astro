@@ -1,0 +1,11 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+interface Props { project: CollectionEntry<'projects'>; featured?: boolean; }
+const { project, featured = false } = Astro.props;
+const p = project.data;
+---
+<article class:list={['project-card', { 'project-featured': featured }]} data-category={p.category}>
+<a class:list={['project-visual', p.coverStyle]} href={'/work/' + p.slug + '/'} aria-label={'View ' + p.title}>
+<Image src={p.cover} alt={p.coverAlt} widths={[480, 800, 1280]} sizes={featured ? '(min-width: 1000px) 750px, 90vw' : '(min-width: 700px) 45vw, 90vw'} format="webp" loading="lazy" />
+</a><div class="project-copy"><span class="eyebrow">{p.category}</span><h3><a href={'/work/' + p.slug + '/'}>{p.title}</a></h3><p>{p.summary}</p><a class="project-link" href={'/work/' + p.slug + '/'}>Explore project <span aria-hidden="true">↗</span><span class="sr-only">: {p.title}</span></a></div></article>

@@ -1,0 +1,9 @@
+---
+import { Image } from 'astro:assets';
+import portrait from '../assets/sirojul.jpg';
+import Layout from '../layouts/Layout.astro';
+import Experience from '../components/Experience.astro';
+import profile from '../data/profile';
+---
+<Layout title="About" description={profile.about}><section class="wrap about-page"><div class="about-intro"><div class="page-heading"><span class="eyebrow">About me</span><h1>A designer.<br /><em>Across contexts.</em></h1><p>{profile.about}</p><p>My background includes {profile.education.subject} at the {profile.education.institution}.</p></div><figure class="hero-portrait"><div class="portrait-stage"><Image src={portrait} alt="Portrait of Sirojul Ibad" widths={[340,490]} sizes="(max-width:700px) 80vw, 396px" format="webp" loading="eager" /></div><figcaption><strong>{profile.name}</strong><span>{profile.role}</span></figcaption></figure></div>
+<div class="about-section"><Experience full /><div class="section-intro"><span class="eyebrow">Skills & tools</span><h2>From structure<br />to the screen.</h2><div class="skill-tags">{profile.skills.map(skill => <span>{skill}</span>)}</div><p>{profile.tools.join(' · ')}</p><h3>Education</h3><p>{profile.education.subject}<br />{profile.education.institution}<br />{profile.education.period}</p></div></div></section></Layout>

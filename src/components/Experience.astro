@@ -1,0 +1,6 @@
+---
+import profile from '../data/profile';
+interface Props { full?: boolean; }
+const { full = false } = Astro.props;
+---
+<div class="experience"><h2>Experience</h2><ol class="experience-list">{profile.experience.slice(0, full ? undefined : 3).map(job => <li><div><strong>{job.company}</strong><span>{job.role}</span>{full && <span>{job.location}</span>}</div><span class="period">{job.period}</span></li>)}</ol></div>

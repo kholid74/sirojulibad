@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { publishedProjects } from '../../lib/projects';
+import { categories } from '../../lib/project-schema.mjs';
+const projects = await publishedProjects();
+---
+<Layout title="Work" description="Explore Sirojul Ibad's portfolio of website, mobile, dashboard, and game interfaces."><section class="wrap work-page"><div class="page-heading"><span class="eyebrow">Portfolio</span><h1>Across products.<br /><em>Into the details.</em></h1><p>Websites, mobile experiences, dashboards, and more.</p></div>
+<div class="filters" aria-label="Filter projects by category" hidden>{['All',...categories].map(category => <button type="button" data-filter={category} aria-pressed={category === 'All'}>{category}</button>)}</div>
+<p class="result-count" role="status" aria-live="polite" aria-atomic="true">{projects.length} projects</p>
+<div class="project-grid work-grid">{projects.map(project => <ProjectCard project={project} />)}</div></section>
+<script>
+import { filterProjects } from '../../scripts/filter';
+const controls = document.querySelector<HTMLElement>('.filters');
+const cards = [...document.querySelectorAll<HTMLElement>('.work-grid > [data-category]')];
+const count = document.querySelector<HTMLElement>('.result-count');
+if (controls && count) {
+  controls.hidden = false;
+  controls.addEventListener('click', event => {
+    if (!(event.target instanceof Element)) return;
+    const button = event.target.closest<HTMLButtonElement>('button[data-filter]');
+    if (!button) return;
+    const total = filterProjects(cards, button.dataset.filter ?? 'All');
+    controls.querySelectorAll('button').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+    count.textContent = total + (total === 1 ? ' project' : ' projects');
+  });
+}
+</script></Layout>

@@ -1,0 +1,84 @@
+# Candidate editor configuration. Connect and test upload/save/preview/revert before handover.
+media:
+  - name: project-images
+    label: Project images
+    input: src/assets/projects
+    output: ../../assets/projects
+    extensions: [jpg, jpeg, png, webp]
+    rename: safe
+content:
+  - name: projects
+    label: Portfolio projects
+    type: collection
+    path: src/content/projects
+    format: yaml-frontmatter
+    subfolders: false
+    filename: "{fields.slug}.md"
+    view:
+      primary: title
+      fields: [title, category, status]
+    fields:
+      - { name: title, label: Project title, type: string, required: true }
+      - name: slug
+        type: string
+        required: true
+        pattern: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        description: "Keep existing slugs stable to preserve shared links."
+      - name: category
+        type: select
+        required: true
+        options:
+          values: [Web Design, Mobile Design, Dashboard Design, Games]
+      - { name: summary, type: text, required: true }
+      - name: cover
+        type: image
+        required: true
+        options:
+          media: project-images
+      - { name: coverAlt, label: Image description, type: string, required: true }
+      - name: coverStyle
+        type: select
+        options:
+          values: [screen, logo]
+      - name: status
+        type: select
+        required: true
+        options:
+          values: [draft, published]
+      - { name: order, label: Display order, type: number }
+      - { name: featuredOrder, label: Homepage order (leave empty to hide), type: number }
+      - { name: role, type: string }
+      - { name: year, type: string }
+      - { name: website, label: Project link (HTTP/HTTPS), type: string }
+      - { name: behance, label: Behance link (HTTP/HTTPS), type: string }
+      - { name: body, label: Project overview, type: rich-text }
+  - name: profile
+    label: Profile
+    type: file
+    path: src/data/profile.json
+    format: json
+    fields:
+      - { name: name, type: string, required: true }
+      - { name: role, type: string, required: true }
+      - { name: intro, type: text, required: true }
+      - { name: about, type: text, required: true }
+      - { name: email, type: string, required: true }
+      - { name: linkedin, type: string, required: true }
+      - { name: behance, type: string, required: true }
+      - { name: instagram, type: string }
+      - { name: skills, type: string, list: true }
+      - { name: tools, type: string, list: true }
+      - name: experience
+        type: object
+        list: true
+        fields:
+          - { name: company, type: string, required: true }
+          - { name: role, type: string, required: true }
+          - { name: location, type: string, required: true }
+          - { name: period, type: string, required: true }
+      - name: education
+        type: object
+        fields:
+          - { name: subject, type: string, required: true }
+          - { name: institution, type: string, required: true }
+          - { name: period, type: string, required: true }

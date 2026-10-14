@@ -1,0 +1,33 @@
+---
+import '../styles/global.css';
+import themeScript from '../scripts/theme.js?raw';
+import navigationScript from '../scripts/navigation.js?raw';
+import profile from '../data/profile';
+interface Props { title: string; description?: string; image?: string; noindex?: boolean; }
+const { title, description = profile.about, image = '/images/sirojul.jpg', noindex = false } = Astro.props;
+const indexable = !noindex && import.meta.env.PUBLIC_INDEXABLE === 'true' && Boolean(Astro.site);
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site) : undefined;
+const ogImage = Astro.site ? new URL(image, Astro.site) : undefined;
+---
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{title} | {profile.name}</title><meta name="description" content={description} />
+<meta name="robots" content={indexable ? 'index, follow' : 'noindex, nofollow'} />
+{canonical && <link rel="canonical" href={canonical} />}
+<meta property="og:type" content="website" /><meta property="og:title" content={title + ' | ' + profile.name} />
+<meta property="og:description" content={description} />{canonical && <meta property="og:url" content={canonical} />}
+{ogImage && <meta property="og:image" content={ogImage} />}<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<script is:inline set:html={themeScript}></script>
+</head><body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header wrap"><a class="wordmark" href="/" aria-label="Sirojul Ibad, home">sirojul ibad<span>.</span></a>
+<div class="header-controls"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" hidden><svg class="theme-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z" /></svg><svg class="theme-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" /></svg></button><button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-navigation" aria-expanded="false" hidden><svg class="menu-bars" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16" /></svg><svg class="menu-close" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 6 12 12M6 18 18 6" /></svg></button></div><nav id="site-navigation" aria-label="Main navigation"><a href="/work/" aria-current={Astro.url.pathname.startsWith('/work/') ? 'page' : undefined}>Work</a><a href="/about/" aria-current={Astro.url.pathname === '/about/' ? 'page' : undefined}>About</a><a href="#contacts">Contact <span aria-hidden="true">↗</span></a></nav></header>
+<script is:inline set:html={navigationScript}></script>
+<main id="main"><slot /></main>
+<section class="contact-section wrap" id="contacts" aria-labelledby="contact-title"><span class="eyebrow">Let's connect</span><h2 id="contact-title">Have a role in mind?<br />Let's talk.</h2>
+<a class="email-link" href={'mailto:' + profile.email}>{profile.email} <span aria-hidden="true">↗</span></a>
+<div class="contact-links"><a href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="sr-only">, opens in a new tab</span></a><a href={profile.behance} target="_blank" rel="noopener noreferrer">Behance <span aria-hidden="true">↗</span><span class="sr-only">, opens in a new tab</span></a></div></section>
+<footer class="site-footer wrap"><span>© {new Date().getFullYear()} {profile.name}</span><a href="#top">Back to top ↑</a></footer>
+</body></html>

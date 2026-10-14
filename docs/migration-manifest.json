@@ -1,0 +1,308 @@
+{
+  "projects": [
+    {
+      "legacyId": 3,
+      "slug": "astraland-indonesia",
+      "path": "/work/astraland-indonesia/",
+      "sourceImage": "01JMSN2XCTH2Y9874E6RH8780K.jpg",
+      "cover": "01JNEQYMNGCKNRB599X5RGR1MK.png",
+      "originalUrl": "https://astralandindonesia.co.id",
+      "originalBehance": "https://www.behance.net/gallery/215920935/Astraland-Indonesia-Website-Design",
+      "descriptionSha256": "e73d314c62c1b187d65e08443ba10aec525ab1503fb9d626eaf932b75e2fe367"
+    },
+    {
+      "legacyId": 4,
+      "slug": "borobudur-marathon",
+      "path": "/work/borobudur-marathon/",
+      "sourceImage": "01JMY5MEACDQ84V1AJ1K0N4GW2.jpg",
+      "cover": "01JMY5MEACDQ84V1AJ1K0N4GW2.jpg",
+      "originalUrl": "https://borobudurmarathon.com/apps/",
+      "originalBehance": "https://www.behance.net/gallery/215788321/Borobudur-Marathon-Mobile-App",
+      "descriptionSha256": "38b4ef8b2977ba0807cb2537c36f88249d56abb43dffb6e4bd576380db1bcf05"
+    },
+    {
+      "legacyId": 7,
+      "slug": "medeasy-website",
+      "path": "/work/medeasy-website/",
+      "sourceImage": "01JNDGDEXQX2H0C37JSD9M7GHK.jpg",
+      "cover": "01JNDGDEXQX2H0C37JSD9M7GHK.jpg",
+      "originalUrl": "https://medeasy.ph/",
+      "originalBehance": "",
+      "descriptionSha256": "7fe1e54069d1754a6fabba1fd4fa29564e96cd802ed3a4c1b227fcfde1aa6c6d"
+    },
+    {
+      "legacyId": 8,
+      "slug": "spoonful-kitchen",
+      "path": "/work/spoonful-kitchen/",
+      "sourceImage": "01JNDGHD7JS5Y3KA3BH3V3Z6ZB.jpg",
+      "cover": "01JNDGHD7JS5Y3KA3BH3V3Z6ZB.jpg",
+      "originalUrl": "https://www.spoonfulkitchen.com.au/",
+      "originalBehance": "",
+      "descriptionSha256": "d0e41c90cc8bc959a7da1456edb596a55da15e92c1612d527fd31360a0958026"
+    },
+    {
+      "legacyId": 9,
+      "slug": "mini-cooper-website",
+      "path": "/work/mini-cooper-website/",
+      "sourceImage": "01JNE3QGHZ07ZJMNP3TT95TSJW.jpg",
+      "cover": "01JNE3QGHZ07ZJMNP3TT95TSJW.jpg",
+      "originalUrl": "https://www.figma.com/proto/ZZahmw8EHckfBsFvRUj9Ps/Fristel---Mini-Cooper-(Copy)?node-id=76-144&t=U2oR6EtHniYwXnum-1&scaling=min-zoom&content-scaling=fixed&page-id=76%3A143&starting-point-node-id=76%3A144",
+      "originalBehance": "",
+      "descriptionSha256": "5ba4a661d44a9c3b7369e62f96297d0bb95b9889f6a9dee927e4b22d62b54f0a"
+    },
+    {
+      "legacyId": 10,
+      "slug": "nayue-cosmetics-website",
+      "path": "/work/nayue-cosmetics-website/",
+      "sourceImage": "01JNE3VN8XVJWHM710XPC1T8YG.jpg",
+      "cover": "01JNE3VN8XVJWHM710XPC1T8YG.jpg",
+      "originalUrl": "https://nayuekosmetik.com/",
+      "originalBehance": "",
+      "descriptionSha256": "65420ee5c280f16aeff42ff3a0dcfcebf178594fce8034b30f6c919ba7c795ad"
+    },
+    {
+      "legacyId": 11,
+      "slug": "trip-komodo-island-by-garuda-pariwisata",
+      "path": "/work/trip-komodo-island-by-garuda-pariwisata/",
+      "sourceImage": "01JNE4BV6E51PGZ7F5PGPFJ55H.jpg",
+      "cover": "01JNE4BV6E51PGZ7F5PGPFJ55H.jpg",
+      "originalUrl": "https://tripkomodoisland.com/",
+      "originalBehance": "",
+      "descriptionSha256": "3c1aede18dd115f84be2f7faad6479dc7ac1d4463e36169e0babbd99cee6bab3"
+    },
+    {
+      "legacyId": 12,
+      "slug": "badminton-club-website",
+      "path": "/work/badminton-club-website/",
+      "sourceImage": "01JNE4ETDJSX51F31REP31J0J5.jpg",
+      "cover": "01JNE4ETDJSX51F31REP31J0J5.jpg",
+      "originalUrl": "#",
+      "originalBehance": "",
+      "descriptionSha256": "28ee8c4fb8be3a9c75f31effc1c41f7d9f46937e01f8af52dcd7fcf6741fccaf"
+    },
+    {
+      "legacyId": 13,
+      "slug": "pt-indonesia-asahan-aluminium-inalum",
+      "path": "/work/pt-indonesia-asahan-aluminium-inalum/",
+      "sourceImage": "01JNE4HE9YRSBCMAJ9M5BQJVHF.jpg",
+      "cover": "01JNE4HE9YRSBCMAJ9M5BQJVHF.jpg",
+      "originalUrl": "https://www.inalum.id/id",
+      "originalBehance": "",
+      "descriptionSha256": "c672596a67bf776daf095fccac8dbc746476ebba8ac1adbfb66ee7cda82ce038"
+    },
+    {
+      "legacyId": 14,
+      "slug": "vip-organizer-website",
+      "path": "/work/vip-organizer-website/",
+      "sourceImage": "01JNE4MADTPCAX4Q1B7CSAYFFJ.jpg",
+      "cover": "01JNE4MADTPCAX4Q1B7CSAYFFJ.jpg",
+      "originalUrl": "https://viporganizer.id/",
+      "originalBehance": "",
+      "descriptionSha256": "cef87d82774fe18dd27b77f68b560d2f9e431866e938eefbc55e6b63fd823d82"
+    },
+    {
+      "legacyId": 15,
+      "slug": "oxone-premium-app",
+      "path": "/work/oxone-premium-app/",
+      "sourceImage": "01JNE4RA2DZ0VK47SZEDMD7R2H.jpg",
+      "cover": "01JNE4RA2DZ0VK47SZEDMD7R2H.jpg",
+      "originalUrl": "https://oxone-online.com/download/",
+      "originalBehance": "",
+      "descriptionSha256": "32bb3bfd46676144e068b9c675426390f39af1e343aa0898dc268acbb7bd6b07"
+    },
+    {
+      "legacyId": 16,
+      "slug": "medeasy-ebook-reader",
+      "path": "/work/medeasy-ebook-reader/",
+      "sourceImage": "01JNE4VM75SM6F4RVHDMZW26FX.jpg",
+      "cover": "01JNE4VM75SM6F4RVHDMZW26FX.jpg",
+      "originalUrl": "#",
+      "originalBehance": "",
+      "descriptionSha256": "404c76c5ad1b5b34752dde608d5c663f0cfe7617976e17988eb77dc1afe532fa"
+    },
+    {
+      "legacyId": 17,
+      "slug": "task-management",
+      "path": "/work/task-management/",
+      "sourceImage": "01JNE4WPSCXXX45VV44NMFK3V4.jpg",
+      "cover": "01JNE4WPSCXXX45VV44NMFK3V4.jpg",
+      "originalUrl": "#",
+      "originalBehance": "",
+      "descriptionSha256": "18f2065b2ed10096046d528e2fe9ba562bfdaa7707559e3ad9fcac83ca3b40ca"
+    },
+    {
+      "legacyId": 18,
+      "slug": "ecommer-live-shopping",
+      "path": "/work/ecommer-live-shopping/",
+      "sourceImage": "01JNE4Y304J07F2Q0X2RC3HMND.jpg",
+      "cover": "01JNE4Y304J07F2Q0X2RC3HMND.jpg",
+      "originalUrl": "#",
+      "originalBehance": "",
+      "descriptionSha256": "3c6095dff8d38f1d1c8422e782415eb9a122f50732ba98bbbb88ae9bbeb47b27"
+    },
+    {
+      "legacyId": 19,
+      "slug": "petani-apps",
+      "path": "/work/petani-apps/",
+      "sourceImage": "01JNE50VQ4EW87SYV9H0N5TSD1.jpg",
+      "cover": "01JNE50VQ4EW87SYV9H0N5TSD1.jpg",
+      "originalUrl": "https://petani-nk.com/#mobile-app",
+      "originalBehance": "https://www.behance.net/gallery/166016127/Petani-NK-Apps-Sygenta",
+      "descriptionSha256": "4daf109c84f7b5ad0605f02e1290e027ae37f23031620de497926d6096a2f9aa"
+    },
+    {
+      "legacyId": 20,
+      "slug": "live-score",
+      "path": "/work/live-score/",
+      "sourceImage": "01JNE52E948SXFW3RR14SFJ8XQ.jpg",
+      "cover": "01JNE52E948SXFW3RR14SFJ8XQ.jpg",
+      "originalUrl": "#",
+      "originalBehance": "",
+      "descriptionSha256": "aee03ffec7591d127914a0b935f2772b50e66453a5ca139eb89bb0a29a556f44"
+    },
+    {
+      "legacyId": 21,
+      "slug": "minerbaone",
+      "path": "/work/minerbaone/",
+      "sourceImage": "01JPS6CXBDE873MCQGHJGPYMBF.jpeg",
+      "cover": "01JPS6CXBDE873MCQGHJGPYMBF.jpeg",
+      "originalUrl": "https://staging.minerbaone.com/masuk",
+      "originalBehance": "https://www.behance.net/gallery/216126373/Minerbaone-Dashboard-Website-Design",
+      "descriptionSha256": "dae11f460d5a246f7c5a7c3584a6a0cd5043b3675f096969abed5dd53502251d"
+    },
+    {
+      "legacyId": 22,
+      "slug": "lab-data-dinas-perhubungan-jawa-timur",
+      "path": "/work/lab-data-dinas-perhubungan-jawa-timur/",
+      "sourceImage": "01JPS0VS49XTY7W8W0816DVYR2.jpeg",
+      "cover": "01JPS0VS49XTY7W8W0816DVYR2.jpeg",
+      "originalUrl": "https://labdata.dishub.jatimprov.go.id/",
+      "originalBehance": "",
+      "descriptionSha256": "f55512c35c57735b1d4815dcbb7550dc480c21ee1375faf91a8b04a006782371"
+    },
+    {
+      "legacyId": 23,
+      "slug": "oxone-dashboard",
+      "path": "/work/oxone-dashboard/",
+      "sourceImage": "01JPS21A59SX60EJX951Y33AM4.jpeg",
+      "cover": "01JPS21A59SX60EJX951Y33AM4.jpeg",
+      "originalUrl": "#",
+      "originalBehance": "",
+      "descriptionSha256": "4ef41953a7d1e6ec0da7c6199a616ef011f340922c108c12d91d9b37711bef82"
+    },
+    {
+      "legacyId": 24,
+      "slug": "cartify-ecommerce-base-app-dashboard",
+      "path": "/work/cartify-ecommerce-base-app-dashboard/",
+      "sourceImage": "01JPS2H0TR441R0HYTTWMTQ7ZM.jpeg",
+      "cover": "01JPS2H0TR441R0HYTTWMTQ7ZM.jpeg",
+      "originalUrl": "#",
+      "originalBehance": "",
+      "descriptionSha256": "741553ad6294ce47b37a543fc5c077bd96de167b435cbfda6e3ce904feea59c6"
+    },
+    {
+      "legacyId": 25,
+      "slug": "point-of-sales-kosayu",
+      "path": "/work/point-of-sales-kosayu/",
+      "sourceImage": "01JPS4GT6XDF52MEBWKCGPZGRP.jpeg",
+      "cover": "01JPS4GT6XDF52MEBWKCGPZGRP.jpeg",
+      "originalUrl": "#",
+      "originalBehance": "",
+      "descriptionSha256": "03bad806933ec362ac820592ec81a5a3200ac11ce3adb6b35d03c695cbe91f5e"
+    },
+    {
+      "legacyId": 26,
+      "slug": "game-scratch",
+      "path": "/work/game-scratch/",
+      "sourceImage": "01JNE5KQFC4CHNYF78HE0WQB1X.jpg",
+      "cover": "01JNE5KQFC4CHNYF78HE0WQB1X.jpg",
+      "originalUrl": "https://www.figma.com/proto/kRbEEpg894K4lff7vsQwtl/Game-Scratch?node-id=333-7344&t=y8KYUTaAHwnRqxhb-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A19&starting-point-node-id=333%3A7344",
+      "originalBehance": "",
+      "descriptionSha256": "9e28f203ba745fba0ceca7312652244a3228153f803d4c6cc691b95ef76351b1"
+    }
+  ],
+  "involvement": [
+    {
+      "legacyId": 2,
+      "image": "01JNEQSSE0DCX0XNA8GSSZJ32A.svg",
+      "displayed": false,
+      "reason": "Identity and permission need owner review"
+    },
+    {
+      "legacyId": 5,
+      "image": "01JNEQYMNGCKNRB599X5RGR1MK.png",
+      "displayed": false,
+      "reason": "Identity and permission need owner review"
+    },
+    {
+      "legacyId": 6,
+      "image": "01JNDF4XT290TY84HJ45BA324Y.png",
+      "displayed": false,
+      "reason": "Identity and permission need owner review"
+    },
+    {
+      "legacyId": 7,
+      "image": "01JNDF66KT2H6EF7VMBY0T7RZF.png",
+      "displayed": false,
+      "reason": "Identity and permission need owner review"
+    },
+    {
+      "legacyId": 8,
+      "image": "01JNEQR79T9QHMVH6G4NPQ6YZS.svg",
+      "displayed": false,
+      "reason": "Identity and permission need owner review"
+    },
+    {
+      "legacyId": 9,
+      "image": "01JNERGWT9XF44FCR0E8K3AYWH.svg",
+      "displayed": false,
+      "reason": "Identity and permission need owner review"
+    },
+    {
+      "legacyId": 10,
+      "image": "01JNERKJA0393FZPT9JYC8MH79.png",
+      "displayed": false,
+      "reason": "Identity and permission need owner review"
+    },
+    {
+      "legacyId": 11,
+      "image": "01JNER2HS673Q544NBVMKYXBD9.png",
+      "displayed": false,
+      "reason": "Identity and permission need owner review"
+    },
+    {
+      "legacyId": 12,
+      "image": "01JNER4B205YQXT15J6C3FT20N.png",
+      "displayed": false,
+      "reason": "Identity and permission need owner review"
+    },
+    {
+      "legacyId": 13,
+      "image": "01JNERTJVRG8SN1KB3VSNG2K1E.png",
+      "displayed": false,
+      "reason": "Identity and permission need owner review"
+    },
+    {
+      "legacyId": 14,
+      "image": "01JNG3DCGBGQBBAC12M7M6Z770.png",
+      "displayed": false,
+      "reason": "Identity and permission need owner review"
+    },
+    {
+      "legacyId": 15,
+      "image": "01JNJE122SB34BD275JARJNTAF.png",
+      "displayed": false,
+      "reason": "Identity and permission need owner review"
+    }
+  ],
+  "notes": [
+    "Local migration only; review screenshot permissions and content before publication.",
+    "Astraland uses its existing logo temporarily because all available website covers have a watermark.",
+    "MinerbaOne staging URL is preserved here but omitted from public project links."
+  ],
+  "profileNotes": [
+    "QBIT source dates: Aug 2023–Feb 2024 and Oct 2023–Feb 2024; role-to-period mapping is ambiguous, so visible period uses 2023–2024.",
+    "Kementerian Petanian spelling is retained from source until the owner confirms the correction.",
+    "Eight skills, seven tools, three social URLs, five experience entries and one education entry are preserved in profile JSON. Instagram is retained as a secondary profile field; primary contact links are LinkedIn and Behance."
+  ]
+}
