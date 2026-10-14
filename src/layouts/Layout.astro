@@ -28,6 +28,6 @@ const ogImage = Astro.site ? new URL(image, Astro.site) : undefined;
 <main id="main"><slot /></main>
 <section class="contact-section wrap" id="contacts" aria-labelledby="contact-title"><span class="eyebrow">Let's connect</span><h2 id="contact-title">Have a role in mind?<br />Let's talk.</h2>
 <a class="email-link" href={'mailto:' + profile.email}>{profile.email} <span aria-hidden="true">↗</span></a>
-<div class="contact-links"><a href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="sr-only">, opens in a new tab</span></a><a href={profile.behance} target="_blank" rel="noopener noreferrer">Behance <span aria-hidden="true">↗</span><span class="sr-only">, opens in a new tab</span></a></div></section>
+<div class="contact-links"><a href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="sr-only">, opens in a new tab</span></a><a href={profile.behance} target="_blank" rel="noopener noreferrer">Behance <span aria-hidden="true">↗</span><span class="sr-only">, opens in a new tab</span></a>{profile.instagram && <a href={profile.instagram} target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span><span class="sr-only">, opens in a new tab</span></a>}</div></section>
 <footer class="site-footer wrap"><span>© {new Date().getFullYear()} {profile.name}</span><a href="#top">Back to top ↑</a></footer>
 </body></html>
