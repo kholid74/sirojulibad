@@ -44,13 +44,21 @@ Jika penyimpanan browser diblokir, toggle tetap berfungsi di halaman saat ini; p
 5. Isi featuredOrder hanya untuk proyek yang muncul di Home. Homepage mengikuti urutannya.
 6. Jalankan build dan review preview. Ubah status menjadi `published` setelah siap.
 
-Kategori: Web Design, Mobile Design, Dashboard Design, Games. Draft tidak masuk listing, halaman detail, atau sitemap. Slug duplikat, cover tidak ada, kategori keliru, dan link selain HTTP/HTTPS menggagalkan build. Link kosong diabaikan. Jangan mengganti slug yang telah dibagikan tanpa redirect.
+Kategori dikelola di koleksi Portfolio categories pada CMS; empat kategori awal tetap Web Design, Mobile Design, Dashboard Design, Games. Draft tidak masuk listing, halaman detail, atau sitemap. Slug duplikat, cover tidak ada, kategori keliru, dan link selain HTTP/HTTPS menggagalkan build. Link kosong diabaikan. Jangan mengganti slug yang telah dibagikan tanpa redirect.
 
 Profil, pengalaman, pendidikan, keterampilan, dan tautan ada di `src/data/profile.json`. Foto serta treatment frame/filter ada di `src/assets/sirojul.jpg` dan `src/styles/global.css`. Teks hero utama merupakan komposisi desain di `src/pages/index.astro`.
 
+## Kelola kategori portfolio
+
+1. Buka **Portfolio categories** di Pages CMS, lalu tambah kategori dengan nama unik dan Display order (angka kecil tampil lebih awal).
+2. Simpan kategori, lalu buka **Portfolio projects**. Pilihan Category mengambil daftar terbaru dari koleksi kategori.
+3. Pilih kategori untuk proyek, simpan, dan tunggu deployment. Filter Work mengikuti nama serta urutan kategori secara otomatis.
+
+Data kategori ada di `src/content/categories/*.json`. Nama kategori disimpan sebagai referensi pada proyek agar konten lama tetap kompatibel. Untuk mengganti nama kategori yang dipakai, buat kategori pengganti, pindahkan seluruh proyek (termasuk draft), lalu hapus kategori lama. Build menolak kategori duplikat, nama All, serta referensi kategori yang sudah tidak ada. All dipakai untuk filter semua proyek.
+
 ## Editor pemilik
 
-`.pages.yml` adalah konfigurasi kandidat [Pages CMS](https://pagescms.org/docs/configuration/content/), dengan koleksi proyek dan profil. Folder ini adalah root repository frontend; CMS dapat diarahkan ke repository ini. Akun belum dihubungkan. Mapping media relatif perlu diuji lewat upload, simpan, build, preview, dan revert oleh pemilik sebelum disebut siap pakai. Jangan menjanjikan editor aktif hanya karena YAML tersedia.
+`.pages.yml` adalah konfigurasi kandidat [Pages CMS](https://pagescms.org/docs/configuration/content/), dengan koleksi kategori, proyek, dan profil. Folder ini adalah root repository frontend; CMS dapat diarahkan ke repository ini. Akun belum dihubungkan. Mapping media relatif perlu diuji lewat upload, simpan, build, preview, dan revert oleh pemilik sebelum disebut siap pakai. Jangan menjanjikan editor aktif hanya karena YAML tersedia.
 
 ## Produksi dan preview
 

@@ -7,6 +7,26 @@ media:
     extensions: [jpg, jpeg, png, webp]
     rename: safe
 content:
+  - name: categories
+    label: Portfolio categories
+    type: collection
+    path: src/content/categories
+    format: json
+    subfolders: false
+    filename: "{fields.name}.json"
+    view:
+      primary: name
+      fields: [name, order]
+    fields:
+      - name: name
+        label: Category name
+        type: string
+        required: true
+        description: "Use a unique name. All is reserved for the filter. Create a replacement and reassign projects before renaming or deleting a used category."
+      - name: order
+        label: Display order
+        type: number
+        description: "Lower numbers appear first. Leave empty to place last."
   - name: projects
     label: Portfolio projects
     type: collection
@@ -25,10 +45,14 @@ content:
         pattern: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
         description: "Keep existing slugs stable to preserve shared links."
       - name: category
-        type: select
+        type: reference
         required: true
+        description: "Add new categories under Portfolio categories first."
         options:
-          values: [Web Design, Mobile Design, Dashboard Design, Games]
+          collection: categories
+          multiple: false
+          value: "{fields.name}"
+          label: "{fields.name}"
       - { name: summary, type: text, required: true }
       - name: cover
         type: image

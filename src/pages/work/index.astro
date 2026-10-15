@@ -2,8 +2,9 @@
 import Layout from '../../layouts/Layout.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
 import { publishedProjects } from '../../lib/projects';
-import { categories } from '../../lib/project-schema.mjs';
+import { getCollection } from 'astro:content';
 const projects = await publishedProjects();
+const categories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order || a.data.name.localeCompare(b.data.name)).map(category => category.data.name);
 ---
 <Layout title="Work" description="Explore Sirojul Ibad's portfolio of website, mobile, dashboard, and game interfaces."><section class="wrap work-page"><div class="page-heading"><span class="eyebrow">Portfolio</span><h1>Across products.<br /><em>Into the details.</em></h1><p>Websites, mobile experiences, dashboards, and more.</p></div>
 <div class="filters" aria-label="Filter projects by category" hidden>{['All',...categories].map(category => <button type="button" data-filter={category} aria-pressed={category === 'All'}>{category}</button>)}</div>
